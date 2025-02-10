@@ -9,4 +9,4 @@ Ancillary IDs (such as for genre, creators, etc.) are not supported and will be 
 ## Installation
 
 The easiest installation method as of ComicTagger 1.6.0-beta.1 onwards for the plugin is to place the [release](https://github.com/mizaki/metroninfo_ct/releases) zip file
-`metroninfoxml-plugin-<version>.zip` into the [plugins](https://github.com/comictagger/comictagger/wiki/Installing-plugins) directory.
+`metroninfo_ct-plugin-<version>.zip` into the [plugins](https://github.com/comictagger/comictagger/wiki/Installing-plugins) directory.
