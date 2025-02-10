@@ -668,10 +668,9 @@ class MetronInfo(Tag):
         if m_urls is not None:
             urls = []
             for url in m_urls:
-                url_text = get_text('URL')
-                if url_text is not None:
-                    urls.append(url_text)
-            md.web_links = utils.split_urls(utils.xlate(','.join(urls)))
+                if url.text is not None:
+                    urls.append(url.text)
+            md.web_links = utils.split_urls(' '.join(urls))
 
         md.format = utils.xlate(get_text('Format', m_series))
         md.maturity_rating = utils.xlate(get_text('AgeRating'))
