@@ -503,10 +503,11 @@ class MetronInfo(Tag):
             for current_id in metron_ids:
                 if current_id.attrib['source'] == md.data_origin.name:
                     current_id.text = md.issue_id
+                    current_id.attrib['primary'] = 'true'
                     found = True
                     break
             if not found:
-                add_element(metron_ids, 'ID', md.issue_id, {'source': md.data_origin.name})
+                add_element(metron_ids, 'ID', md.issue_id, {'source': md.data_origin.name, 'primary': 'true'})
 
         metron_publisher.clear()
         if md.publisher:
