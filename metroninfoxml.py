@@ -420,7 +420,7 @@ class MetronInfo(Tag):
             else:
                 split_titles = md.title.split(';')
                 for title in split_titles:
-                    add_element(metron_stories, 'Story', title)
+                    add_element(metron_stories, 'Story', title.strip())
 
         if md.manga is not None and md.manga.casefold().startswith('yes'):
             md.genres.add('Manga')
