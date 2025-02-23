@@ -1,4 +1,4 @@
-# An Advanced Comic Book Format XML plugin for Comic Tagger
+# A MetronInfo Format XML plugin for Comic Tagger
 
 A plugin for [ComicTagger](https://github.com/comictagger/comictagger/releases) to allow the use of the MetronInfo Format XML metadata [schema](https://metron-project.github.io/docs/category/metroninfo).
 
