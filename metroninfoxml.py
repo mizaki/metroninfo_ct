@@ -494,7 +494,8 @@ class MetronInfo(Tag):
         metron_arcs.clear()
         if md.story_arcs:
             for arc in md.story_arcs:
-                add_element(metron_arcs, 'Arcs', arc)
+                arc_element = ET.SubElement(metron_arcs, 'Arc')
+                add_element(arc_element, 'Name', arc)
 
         # Will preserve IDs of sources
         if md.issue_id:
