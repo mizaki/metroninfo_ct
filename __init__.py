@@ -1,5 +1,5 @@
 from __future__ import annotations
 
-from .acbfxml import ACBF
+from .metroninfoxml import MetronInfo
 
-__all__ = ['ACBF']
+__all__ = ['MetronInfo']
